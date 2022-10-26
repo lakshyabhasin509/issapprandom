@@ -5,7 +5,7 @@ from datetime import datetime
 
 
 MY_EMAIL="lakshyabhasinissnfo@gmail.com"
-MY_PASSWORD="abcd1234()"
+MY_PASSWORD="kjwphedmccmqsvlj"
 MY_LATS=30.316496
 MY_LONGS=78.032188
 
@@ -46,11 +46,11 @@ def is_night():
         return True
 
 while True:
-    time.sleep(120)
-    if is_night() and is_iss_inPosition():
+    time.sleep(3)
+    if True:
         connection = smtplib.SMTP("smtp.gmail.com", port=587)
         connection.starttls()
         connection.login(user=MY_EMAIL, password=MY_PASSWORD)
-        connection.sendmail(from_addr=MY_EMAIL, to_addrs=MY_EMAIL, msg="Subject: Look up☝️its Hereee!!!!\n\n International space startion is just above you")
+        connection.sendmail(from_addr=MY_EMAIL, to_addrs=MY_EMAIL, msg="Subject: Look up its Hereee!!!!\n\n International space startion is just above you")
         connection.close()
 
